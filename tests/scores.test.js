@@ -35,4 +35,20 @@ describe('scores', () => {
         });
     });
 
+    // Test for scores.getUserBest(user, mode).
+    describe('#getUserRecent', () => { 
+        it('should return a user\'s recent scores from the Ripple API', (done) => {
+            scores.getUserBest('Howl', 'osu')
+                .then((scores) => {
+                    //console.log(scores);
+                    done();
+                    expect(scores)
+                        .toNotBe(null)
+                        .toNotBe(undefined)
+                        .toExist()
+                        .toBeA('object')
+                });
+        });
+    });    
+
 });
