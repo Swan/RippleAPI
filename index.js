@@ -1,0 +1,5 @@
+const cheesegull = require('./lib/cheesegull');
+
+module.exports = {
+    getBeatmapInfo: cheesegull.getBeatmapInfo
+};
