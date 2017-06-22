@@ -19,4 +19,20 @@ describe('scores', () => {
         });
     });
 
+    // Test for scores.getUserBest(user, mode).
+    describe('#getUserBest', () => { 
+        it('should return a user\'s best scores from the Ripple API', (done) => {
+            scores.getUserBest(1298, 'mania')
+                .then((scores) => {
+                    //console.log(scores);
+                    done();
+                    expect(scores)
+                        .toNotBe(null)
+                        .toNotBe(undefined)
+                        .toExist()
+                        .toBeA('object')
+                });
+        });
+    });
+
 });

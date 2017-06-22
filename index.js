@@ -5,5 +5,6 @@ module.exports = {
     getBeatmapInfo: cheesegull.getBeatmapInfo,
     getBeatmapSetInfo: cheesegull.getBeatmapSetInfo,
     searchBeatmaps: cheesegull.searchBeatmaps,
-    getBeatmapScores: scores.getBeatmapScores
+    getBeatmapScores: scores.getBeatmapScores,
+    getUserBest: scores.getUserBest
 };
