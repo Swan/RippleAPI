@@ -157,4 +157,18 @@ describe('users', () => {
         });
     });
 
+    // Test for users.getIdOfUsers(username)
+    describe('#getIdOfUser', () => { 
+        it('should get the ID for a given user from Ripple\'s API', (done) => {
+            users.getIdOfUser('FokaBot')
+                .then((user) => {
+                    //console.log(user);
+                    done();
+                    expect(user)
+                        .toExist()
+                        .toBeA('object')                        
+                })
+        });
+    });
+
 });
