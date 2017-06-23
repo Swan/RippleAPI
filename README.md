@@ -29,6 +29,8 @@ There's a ton of different endpoints on the Ripple API that is currently support
 * **[ping(token)](http://docs.ripple.moe/docs/api/v1#get-%2Fping)** - Check the API is alive, and check your token’s (not required) privileges.
 * **[surprise()](http://docs.ripple.moe/docs/api/v1#get-%2Fsurprise_me)** - A test API endpoint that spits some random sentences.
 
+---
+
 **Badges**
 * **[getBadges()](http://ripple.moe/api/v1/badges)** - Retrieve a list of all the current badges on Ripple.
 
