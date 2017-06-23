@@ -25,5 +25,6 @@ module.exports = {
     getUserpageById: users.getUserpageById,
     //getUserpageByName: users.getUserpageByName
     lookupUser: users.lookupUser,
-    surprise: misc.surprise
+    surprise: misc.surprise,
+    ping: misc.ping
 };
