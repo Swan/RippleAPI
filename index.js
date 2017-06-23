@@ -5,6 +5,7 @@ const misc = require('./lib/misc');
 const tokens = require('./lib/tokens');
 const bancho = require('./lib/bancho');
 const leaderboard = require('./lib/leaderboard');
+const badges = require('./lib/badges');
 
 module.exports = {
     getBeatmapInfo: cheesegull.getBeatmapInfo,
@@ -37,5 +38,6 @@ module.exports = {
     //isOnlineById: bancho.isOnlineById,
     //isOnlineByName: bancho.isOnlineByName,
     //getOnlineUsers: bancho.getOnlineUsers,
-    getLeaderboard: leaderboard.getLeaderboard
+    getLeaderboard: leaderboard.getLeaderboard,
+    getBadges: badges.getBadges
 };
