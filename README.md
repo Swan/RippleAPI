@@ -20,7 +20,13 @@ rippleAPI.ping()
     });
 ```    
 # List of Functions
-There's a ton of different endpoints on the Ripple API that we currently support. Here are the following: 
+There's a ton of different endpoints on the Ripple API that is currently supported. Here are the following: 
+
 **Misc**
 * ping(token) - Check the API is alive, and check your token’s privileges. [GET /ping](http://docs.ripple.moe/docs/api/v1#get-%2Fping)
 * surprise() - A test API endpoint that spits some random sentences.. [GET /surprise_me](http://docs.ripple.moe/docs/api/v1#get-%2Fsurprise_me)
+
+**Tokens**
+* createToken(username, password, privileges, description). Create a new token using username and password. [POST /tokens](http://docs.ripple.moe/docs/api/v1#post-%2Ftokens)
+* getTokens(token) - Allows to retrieve information about the API tokens of the current user. [GET /tokens](http://docs.ripple.moe/docs/api/v1#get-%2Ftokens)
+* getTokenInfo(token) - Retrieves information about the passed token. [GET /tokens/self](http://docs.ripple.moe/docs/api/v1#get-%2Ftokens%2Fself)
