@@ -11,6 +11,8 @@ module.exports = {
     getUserRecent: scores.getUserRecent,
     getUserById: users.getUserById,
     getUserByName: users.getUserByName,
+    getFullUserById: users.getFullUserById,
+    getFullUserByName: users.getFullUserByName,
     getUsersByNameAka: users.getUserByNameAka,
     getUsersByCountry: users.getUsersByCountry,
     getUsersByPrivilegeGroup: users.getUsersByPrivilegeGroup,

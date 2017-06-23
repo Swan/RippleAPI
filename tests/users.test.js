@@ -31,6 +31,34 @@ describe('users', () => {
         });
     });
 
+    // Test for users.getFullUserById(id)
+    describe('#getFullUserById', () => { 
+        it('should get the information for a given user from Ripple\'s API', (done) => {
+            users.getFullUserById(1298)
+                .then((user) => {
+                    //console.log(user);
+                    done();
+                    expect(user)
+                        .toExist()
+                        .toBeA('object')                        
+                })
+        });
+    });
+
+    // Test for users.getFullUserByName(username)
+    describe('#getFullUserByName', () => { 
+        it('should get the information for a given user from Ripple\'s API', (done) => {
+            users.getFullUserByName('Shaural')
+                .then((user) => {
+                    //console.log(user);
+                    done();
+                    expect(user)
+                        .toExist()
+                        .toBeA('object')                        
+                })
+        });
+    });
+
      // Test for users.getUserByNameAka(nameAka)
     describe('#getUserByNameAka', () => { 
         it('should get the information for a given user from Ripple\'s API', (done) => {
