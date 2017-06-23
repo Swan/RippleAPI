@@ -1,6 +1,7 @@
 const cheesegull = require('./lib/cheesegull');
 const scores = require('./lib/scores');
 const users = require('./lib/users');
+const misc = require('./lib/misc');
 
 module.exports = {
     getBeatmapInfo: cheesegull.getBeatmapInfo,
@@ -23,5 +24,6 @@ module.exports = {
     getIdOfUser: users.getIdOfUser,
     getUserpageById: users.getUserpageById,
     //getUserpageByName: users.getUserpageByName
-    lookupUser: users.lookupUser
+    lookupUser: users.lookupUser,
+    surprise: misc.surprise
 };
