@@ -55,6 +55,7 @@ There's a ton of different endpoints on the Ripple API that is currently support
 * **getUsersByNameAka([nameAkas])** - Retrieves a list of users by querying for multiple name_akas. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
 * **getUsersByCountries([countries])** - Retrieves a list of users by querying for multiple countries. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
 
+
 **Scores**
 
 *Note: for mode parameters, you can specify either "osu", "taiko", "mania", "ctb", or "all"*
@@ -63,7 +64,8 @@ There's a ton of different endpoints on the Ripple API that is currently support
 * **getUserBest(username OR userId, mode)** - Retrieves a user's best scores. [GET /users/scores/best](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Fscores%2Frecent%2C-get-%2Fusers%2Fscores%2Fbest)
 * **getUserRecent(username OR userId, mode)** - Retrieves a user's recent scores. [GET /users/scores/recent](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Fscores%2Frecent%2C-get-%2Fusers%2Fscores%2Fbest)
 
-***Cheesegull (Beatmaps)**
+
+**Cheesegull (Beatmaps)**
 
 **Note: For gameMode parameters, you can specify either:**
 
