@@ -28,5 +28,6 @@ module.exports = {
     lookupUser: users.lookupUser,
     surprise: misc.surprise,
     ping: misc.ping,
-    createToken: tokens.createToken
+    createToken: tokens.createToken,
+    getTokens: tokens.getTokens
 };
