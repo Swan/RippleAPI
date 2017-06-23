@@ -57,7 +57,7 @@ There's a ton of different endpoints on the Ripple API that is currently support
 
 **Scores**
 
-*Note for mode parameters, you can specify either "osu", "taiko", "mania", "ctb", or "all"
+*Note for mode parameters, you can specify either "osu", "taiko", "mania", "ctb", or "all"*
 
 * **getBeatmapScores(beatmapMd5 OR beatmapId, mode)** - Retrieves scores for a certain beatmap. [GET /scores](http://docs.ripple.moe/docs/api/v1#get-%2Fscores)
 * **getUserBest(username OR userId, mode)** - Retrieves a user's best scores. [GET /users/scores/best](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Fscores%2Frecent%2C-get-%2Fusers%2Fscores%2Fbest)
