@@ -39,7 +39,7 @@ There's a ton of different endpoints on the Ripple API that is currently support
 
 **Leaderboard**
 
-Note: For mode parameters you can specify either: *'mania', 'osu', 'taiko', 'ctb' OR 'all'*
+Note: For mode parameters you can specify either: `'mania', 'osu', 'taiko', 'ctb' OR 'all'`
 
 * **[getLeaderboard(mode, page)](http://ripple.moe/api/v1/leaderboard)** - Retrieve a list of all the current leaderboard on Ripple. 
 
@@ -82,7 +82,7 @@ The following can be used to retrieve one or more users:
 
 **Scores**
 
-Note: for mode parameters, you can specify either *"osu", "taiko", "mania", "ctb", or "all"*
+Note: for mode parameters, you can specify either `"osu", "taiko", "mania", "ctb", or "all"`
 
 * **[getBeatmapScores(beatmapMd5 OR beatmapId, mode)](http://docs.ripple.moe/docs/api/v1#get-%2Fscores)** - Retrieves scores for a certain beatmap.
 * **[getUserBest(username OR userId, mode)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Fscores%2Frecent%2C-get-%2Fusers%2Fscores%2Fbest)** - Retrieves a user's best scores.
@@ -95,22 +95,22 @@ Note: for mode parameters, you can specify either *"osu", "taiko", "mania", "ctb
 
 **Note: For gameMode parameters, you can specify either:**
 
-A single mode string: *'mania', 'osu', 'taiko' 'ctb', 'all'*
+A single mode string: `'mania', 'osu', 'taiko' 'ctb', 'all'`
 
 **OR**
 
-An array of modes: *['mania', 'osu', 'taiko', 'ctb', 'all']*
+An array of modes: `['mania', 'osu', 'taiko', 'ctb', 'all']`
 
 
 ---
 
 **Note: For rankedStatus parameters, you can specify either:** 
 
-A single status string: *'ranked', 'unranked', 'loved', 'graveyard', 'wip', 'pending', 'approved', 'qualified', 'all'*
+A single status string: `'ranked', 'unranked', 'loved', 'graveyard', 'wip', 'pending', 'approved', 'qualified', 'all'`
 
 **OR**
 
-An array of statuses: *['ranked', 'unranked', 'loved', 'graveyard', 'wip', 'pending', 'approved', 'qualified', 'all']*
+An array of statuses: `['ranked', 'unranked', 'loved', 'graveyard', 'wip', 'pending', 'approved', 'qualified', 'all']`
 
 ---
 
