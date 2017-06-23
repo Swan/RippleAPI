@@ -79,3 +79,7 @@ There's a ton of different endpoints on the Ripple API that is currently support
 *A single status: 'ranked' OR* 
 
 *An array of statuses: ['ranked', 'unranked', 'loved', 'graveyard', 'wip', 'pending', 'approved', 'qualified', 'all']*
+
+* **getBeatmapInfo(beatmapId)** - Retrieves information about a beatmap with the given ID. [GET /api/b/:id](http://docs.ripple.moe/docs/cheesegull/cheesegull-api#get-%2Fapi%2Fb%2F%3Aid)
+* **getBeatmapSetInfo(beatmapSetId)** - Retrieve information about a beatmapset, as well as its children, knowing its ID. [GET /api/s/:id](http://docs.ripple.moe/docs/cheesegull/cheesegull-api#get-%2Fapi%2Fs%2F%3Aid)
+* **searchBeatmaps(searchQuery, gameMode, rankedStatus, amount, offset)** - Returns beatmaps based on the searched query and details passed. [GET /api/search](http://docs.ripple.moe/docs/cheesegull/cheesegull-api#get-%2Fapi%2Fsearch)
