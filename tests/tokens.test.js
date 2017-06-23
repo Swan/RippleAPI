@@ -1,7 +1,7 @@
 const expect = require('expect');
 const tokens = require('../lib/tokens');
 
-describe('cheesegull', () => {
+describe('tokens', () => {
 
     // Test for tokens.createToken(username, password, privileges, description).
     describe('#createToken', () => { 
