@@ -1,6 +1,6 @@
 {
   "name": "rippleapi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An easy to use wrapper for the Ripple osu! private server API",
   "main": "index.js",
   "scripts": {
