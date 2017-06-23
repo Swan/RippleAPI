@@ -6,7 +6,7 @@ RippleAPI.js is an easy to use wrapper for the Ripple osu! private server API. ð
 
 # Usage
 It's extremely simple to start using RippleAPI.js just by following the steps below.
-* Run `npm install rippleapi`
+* Run `npm install rippleapi --save`
 
 ```js
 const rippleAPI = require('rippleapi');
@@ -54,3 +54,6 @@ There's a ton of different endpoints on the Ripple API that is currently support
 * **getUsersByName([usernames])** - Retrieves a list of users by their usernames. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
 * **getUsersByNameAka([nameAkas])** - Retrieves a list of users by querying for multiple name_akas. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
 * **getUsersByCountries([countries])** - Retrieves a list of users by querying for multiple countries. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
+
+**Scores**
+* **getBeatmapScores(beatmap, mode)** - 
