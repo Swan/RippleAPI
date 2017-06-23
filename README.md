@@ -37,26 +37,26 @@ There's a ton of different endpoints on the Ripple API that is currently support
 
 *Note: For mode parameters you can specify either: 'mania', 'osu', 'taiko', 'ctb' OR 'all'*
 
-* **getLeaderboard(mode, page)** - Retrieve a list of all the current leaderboard on Ripple. [GET /leaderboard](http://ripple.moe/api/v1/leaderboard)
+* **[getLeaderboard(mode, page)](http://ripple.moe/api/v1/leaderboard)** - Retrieve a list of all the current leaderboard on Ripple. 
 
 
 **Tokens**
-* **createToken(username, password, privileges, description)** - Create a new token using username and password. [POST /tokens](http://docs.ripple.moe/docs/api/v1#post-%2Ftokens)
-* **getTokens(token)** - Allows to retrieve information about the API tokens of the current user. [GET /tokens](http://docs.ripple.moe/docs/api/v1#get-%2Ftokens)
-* **getTokenInfo(token)** - Retrieves information about the passed token. [GET /tokens/self](http://docs.ripple.moe/docs/api/v1#get-%2Ftokens%2Fself)
+* **[createToken(username, password, privileges, description)](http://docs.ripple.moe/docs/api/v1#post-%2Ftokens)** - Create a new token using username and password.
+* **[getTokens(token)](http://docs.ripple.moe/docs/api/v1#get-%2Ftokens)** - Allows to retrieve information about the API tokens of the current user.
+* **[getTokenInfo(token)](http://docs.ripple.moe/docs/api/v1#get-%2Ftokens%2Fself)** - Retrieves information about the passed token.
 
 
 **Users**
 
 *The following can be used to retrieve only one user.*
 
-* **getUserById(userId)** - Retrieves information about one user by their user Id. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
-* **getUserByName(username)** - Retrieves information about one user by their username. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
-* **getFullUserById(id)** - Retrieves **Full** information about one user by their user id. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
-* **getFullUserByName(username)** - Retrieves **Full** information about one user by their username. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
-* **getIdOfUser(username)** - Retrieves an ID of an user, knowing their username. Simple as that. [GET /users/whatid](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Fwhatid)
-* **getUserpageById(id)** - Retrieve the userpage of an user, in BBCode. [GET /users/userpage](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Fuserpage)
-* **lookupUser(partOfUsername)** - Search for an user knowing (part of) their username. This is mainly used for Ripple’s user search function, in the navbar. [GET /users/lookup](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Flookup)
+* **[getUserById(userId)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)** - Retrieves information about one user by their user Id. 
+* **[getUserByName(username)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)** - Retrieves information about one user by their username.
+* **[getFullUserById(id)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)** - Retrieves **Full** information about one user by their user id.
+* **[getFullUserByName(username)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)** - Retrieves **Full** information about one user by their username. 
+* **[getIdOfUser(username)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Fwhatid)** - Retrieves an ID of an user, knowing their username. Simple as that.
+* **[getUserpageById(id)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Fuserpage)** - Retrieve the userpage of an user, in BBCode. 
+* **[lookupUser(partOfUsername)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Flookup)** - Search for an user knowing (part of) their username. This is mainly used for Ripple’s user search function, in the navbar.
 
 *The following can be used to retrieve one or more users*
 
