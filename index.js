@@ -30,5 +30,6 @@ module.exports = {
     ping: misc.ping,
     createToken: tokens.createToken,
     getTokens: tokens.getTokens,
-    getTokenInfo: tokens.getTokenInfo
+    getTokenInfo: tokens.getTokenInfo,
+    //deleteToken: tokens.deleteToken
 };

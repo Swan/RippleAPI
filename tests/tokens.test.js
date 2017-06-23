@@ -51,5 +51,20 @@ describe('tokens', () => {
                         .toBeA('object')                        
                 })
         });
-    });          
+    });
+
+     // Test for tokens.deleteToken(token).
+    describe('#deleteToken', () => { 
+        it('should delete an API token from Ripple\'s API', (done) => {
+            let token = '';
+            tokens.deleteToken(token)
+                .then((token) => {
+                    //console.log(token);
+                    done();
+                    expect(token)
+                        .toExist()
+                        .toBeA('object')                        
+                })
+        });
+    });              
 });
