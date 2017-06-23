@@ -23,4 +23,5 @@ module.exports = {
     getIdOfUser: users.getIdOfUser,
     getUserpageById: users.getUserpageById,
     //getUserpageByName: users.getUserpageByName
+    lookupUser: users.lookupUser
 };

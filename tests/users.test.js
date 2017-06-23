@@ -199,4 +199,18 @@ describe('users', () => {
     //     });        
     // });
 
+    // Test for users.lookupUser(partOfUsername)
+    describe('#lookupUser', () => { 
+        it('should get return a list of users from a "part" of a username from Ripple\'s API', (done) => {
+            users.lookupUser('AiA')
+                .then((user) => {
+                    //console.log(user);
+                    done();
+                    expect(user)
+                        .toExist()
+                        .toBeA('object')                        
+                })
+        });        
+    });
+
 });
