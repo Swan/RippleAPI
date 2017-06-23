@@ -9,6 +9,8 @@ RippleAPI.js is an easy to use wrapper for the [Ripple API](https://docs.ripple.
 It's extremely simple to start using RippleAPI.js just by following the steps below.
 * Run `npm install rippleapi --save`
 
+All functions follow the same format listed below. It should be fairly easy to use.
+
 ```js
 const rippleAPI = require('rippleapi');
 
