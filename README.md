@@ -28,7 +28,15 @@ There's a ton of different endpoints on the Ripple API that is currently support
 
 
 **Badges**
-* **getBadges** - Retrieve a list of all the current badges on Ripple. [GET /badges](http://http://ripple.moe/api/v1/badges)
+* **getBadges()** - Retrieve a list of all the current badges on Ripple. [GET /badges](http://http://ripple.moe/api/v1/badges)
+
+
+**Leaderboard**
+
+* Note: For mode parameters you can specify either: 'mania', 'osu', 'taiko', 'ctb' OR 'all'
+
+* **getLeaderboard(mode, page)** - Retrieve a list of all the current leaderboard on Ripple. [GET /leaderboard](http://http://ripple.moe/api/v1/leaderboard)
+
 
 **Tokens**
 * **createToken(username, password, privileges, description)** - Create a new token using username and password. [POST /tokens](http://docs.ripple.moe/docs/api/v1#post-%2Ftokens)
