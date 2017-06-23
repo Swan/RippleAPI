@@ -3,6 +3,7 @@ const scores = require('./lib/scores');
 const users = require('./lib/users');
 const misc = require('./lib/misc');
 const tokens = require('./lib/tokens');
+const bancho = require('./lib/bancho');
 
 module.exports = {
     getBeatmapInfo: cheesegull.getBeatmapInfo,
@@ -24,12 +25,15 @@ module.exports = {
     getUsersByCountry: users.getUsersByCountries,
     getIdOfUser: users.getIdOfUser,
     getUserpageById: users.getUserpageById,
-    //getUserpageByName: users.getUserpageByName
+    //getUserpageByName: users.getUserpageByName,
     lookupUser: users.lookupUser,
     surprise: misc.surprise,
     ping: misc.ping,
     createToken: tokens.createToken,
     getTokens: tokens.getTokens,
     getTokenInfo: tokens.getTokenInfo,
-    //deleteToken: tokens.deleteToken
+    //deleteToken: tokens.deleteToken,
+    //isOnlineById: bancho.isOnlineById,
+    //isOnlineByName: bancho.isOnlineByName
+    //getOnlineUsers: bancho.getOnlineUsers
 };
