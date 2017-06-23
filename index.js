@@ -29,5 +29,6 @@ module.exports = {
     surprise: misc.surprise,
     ping: misc.ping,
     createToken: tokens.createToken,
-    getTokens: tokens.getTokens
+    getTokens: tokens.getTokens,
+    getTokenInfo: tokens.getTokenInfo
 };

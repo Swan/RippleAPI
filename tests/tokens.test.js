@@ -23,18 +23,33 @@ describe('tokens', () => {
     //     });
     // });
 
-    // Test for tokens.getTokens(token).
-    describe('#getTokens', () => { 
-        it('should create and retrieve the list of API tokens Ripple\'s API', (done) => {
+    // // Test for tokens.getTokens(token).
+    // describe('#getTokens', () => { 
+    //     it('should retrieve the list of API tokens Ripple\'s API', (done) => {
+    //         let token = '';
+    //         tokens.getTokens(token)
+    //             .then((tokens) => {
+    //                 console.log(tokens);
+    //                 done();
+    //                 expect(tokens)
+    //                     .toExist()
+    //                     .toBeA('object')                        
+    //             })
+    //     });
+    // });
+
+     // Test for tokens.getTokenInfo(token).
+    describe('#getTokenInfo', () => { 
+        it('should retrieve information about one token from Ripple\'s API', (done) => {
             let token = '';
-            tokens.getTokens(token)
-                .then((tokens) => {
-                    console.log(tokens);
+            tokens.getTokenInfo(token)
+                .then((token) => {
+                    //console.log(token);
                     done();
-                    expect(tokens)
+                    expect(token)
                         .toExist()
                         .toBeA('object')                        
                 })
         });
-    });    
+    });          
 });
