@@ -30,3 +30,22 @@ There's a ton of different endpoints on the Ripple API that is currently support
 * createToken(username, password, privileges, description). Create a new token using username and password. [POST /tokens](http://docs.ripple.moe/docs/api/v1#post-%2Ftokens)
 * getTokens(token) - Allows to retrieve information about the API tokens of the current user. [GET /tokens](http://docs.ripple.moe/docs/api/v1#get-%2Ftokens)
 * getTokenInfo(token) - Retrieves information about the passed token. [GET /tokens/self](http://docs.ripple.moe/docs/api/v1#get-%2Ftokens%2Fself)
+
+**Users**
+The following can be used to retrieve only one user.
+* getUserById(userId) - Retrieves information about one user by their user Id. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
+* getUserByName(username) - Retrieves information about one user by their username. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
+* getFullUserById(id) - Retrieves **Full** information about one user by their user id. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
+* getFullUserByName(username) - Retrieves **Full** information about one user by their username. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
+* getIdOfUser(username) - Retrieves an ID of an user, knowing their username. Simple as that. [GET /users/whatid](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Fwhatid)
+* getUserpageById(id) - Retrieve the userpage of an user, in BBCode. [GET /users/userpage](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Fuserpage)
+* lookupUser(partOfUsername) - Search for an user knowing (part of) their username. This is mainly used for Ripple’s user search function, in the navbar. [GET /users/lookup](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Flookup)
+
+The following can be used to retrieve one or more users
+* getUserByNameAka(nameAka, page) - Retrieves a list of users by their name_aka. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
+* getUsersByCountry(country, page) - Retrieves a list of users by their country. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
+* getUsersByPrivilegeGroup(privilegeGroup, page) - Retrieves a list of users by their Privilege Group. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
+* getUsersById([userIds]) - Retrieves a list of users by their ids. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
+* getUsersByName([usernames]) - Retrieves a list of users by their usernames. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
+* getUsersByNameAka([nameAkas]) - Retrieves a list of users by querying for multiple name_akas. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
+* getUsersByCountries([countries]) - Retrieves a list of users by querying for multiple countries. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
