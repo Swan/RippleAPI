@@ -35,7 +35,7 @@ There's a ton of different endpoints on the Ripple API that is currently support
 
 **Leaderboard**
 
-*Note: For mode parameters you can specify either: 'mania', 'osu', 'taiko', 'ctb' OR 'all'*
+Note: For mode parameters you can specify either: 'mania', 'osu', 'taiko', 'ctb' OR 'all'
 
 * **[getLeaderboard(mode, page)](http://ripple.moe/api/v1/leaderboard)** - Retrieve a list of all the current leaderboard on Ripple. 
 
@@ -48,7 +48,7 @@ There's a ton of different endpoints on the Ripple API that is currently support
 
 **Users**
 
-*The following can be used to retrieve only one user.*
+The following can be used to retrieve only one user:
 
 * **[getUserById(userId)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)** - Retrieves information about one user by their user Id. 
 * **[getUserByName(username)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)** - Retrieves information about one user by their username.
@@ -58,44 +58,49 @@ There's a ton of different endpoints on the Ripple API that is currently support
 * **[getUserpageById(id)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Fuserpage)** - Retrieve the userpage of an user, in BBCode. 
 * **[lookupUser(partOfUsername)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Flookup)** - Search for an user knowing (part of) their username. This is mainly used for Ripple’s user search function, in the navbar.
 
-The following can be used to retrieve one or more users
+The following can be used to retrieve one or more users:
 
 * **[getUserByNameAka(nameAka, page)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)** - Retrieves a list of users by their name_aka.
 * **[getUsersByCountry(country, page)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)** - Retrieves a list of users by their country.
 * **[getUsersByPrivilegeGroup(privilegeGroup, page)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)** - Retrieves a list of users by their Privilege Group.
 * **[getUsersById([userIds])](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)** - Retrieves a list of users by their ids. 
-* **getUsersByName([usernames])** - Retrieves a list of users by their usernames. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
-* **getUsersByNameAka([nameAkas])** - Retrieves a list of users by querying for multiple name_akas. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
-* **getUsersByCountries([countries])** - Retrieves a list of users by querying for multiple countries. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
+* **[getUsersByName([usernames])](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)** - Retrieves a list of users by their usernames. 
+* **[getUsersByNameAka([nameAkas])](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)** - Retrieves a list of users by querying for multiple name_akas.
+* **[getUsersByCountries([countries])](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)** - Retrieves a list of users by querying for multiple countries.
 
 
 **Scores**
 
-*Note: for mode parameters, you can specify either "osu", "taiko", "mania", "ctb", or "all"*
+Note: for mode parameters, you can specify either "osu", "taiko", "mania", "ctb", or "all"
 
-* **getBeatmapScores(beatmapMd5 OR beatmapId, mode)** - Retrieves scores for a certain beatmap. [GET /scores](http://docs.ripple.moe/docs/api/v1#get-%2Fscores)
-* **getUserBest(username OR userId, mode)** - Retrieves a user's best scores. [GET /users/scores/best](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Fscores%2Frecent%2C-get-%2Fusers%2Fscores%2Fbest)
-* **getUserRecent(username OR userId, mode)** - Retrieves a user's recent scores. [GET /users/scores/recent](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Fscores%2Frecent%2C-get-%2Fusers%2Fscores%2Fbest)
+* **[getBeatmapScores(beatmapMd5 OR beatmapId, mode)](http://docs.ripple.moe/docs/api/v1#get-%2Fscores)** - Retrieves scores for a certain beatmap.
+* **[getUserBest(username OR userId, mode)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Fscores%2Frecent%2C-get-%2Fusers%2Fscores%2Fbest)** - Retrieves a user's best scores.
+* **[getUserRecent(username OR userId, mode)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Fscores%2Frecent%2C-get-%2Fusers%2Fscores%2Fbest)** - Retrieves a user's recent scores.
 
 
 **Cheesegull (Beatmaps)**
 
 **Note: For gameMode parameters, you can specify either:**
 
-*A single mode: 'mania' OR*
+A single mode: 'mania', 'osu', 'taiko' 'ctb', 'all' 
 
-*An array of modes: ['mania', 'osu', 'taiko', 'ctb', 'all']*
+**OR**
+
+An array of modes: ['mania', 'osu', 'taiko', 'ctb', 'all']
 
 
 **Note: For rankedStatus parameters, you can specify either:** 
 
-*A single status: 'ranked' OR* 
+A single status: 'ranked', 'unranked', 'loved', 'graveyard', 'wip', 'pending', 'approved', 'qualified', 'all'
 
-*An array of statuses: ['ranked', 'unranked', 'loved', 'graveyard', 'wip', 'pending', 'approved', 'qualified', 'all']*
+**OR**
 
-* **getBeatmapInfo(beatmapId)** - Retrieves information about a beatmap with the given ID. [GET /api/b/:id](http://docs.ripple.moe/docs/cheesegull/cheesegull-api#get-%2Fapi%2Fb%2F%3Aid)
-* **getBeatmapSetInfo(beatmapSetId)** - Retrieve information about a beatmapset, as well as its children, knowing its ID. [GET /api/s/:id](http://docs.ripple.moe/docs/cheesegull/cheesegull-api#get-%2Fapi%2Fs%2F%3Aid)
-* **searchBeatmaps(searchQuery, gameMode, rankedStatus, amount, offset)** - Returns beatmaps based on the searched query and details passed. [GET /api/search](http://docs.ripple.moe/docs/cheesegull/cheesegull-api#get-%2Fapi%2Fsearch)
+An array of statuses: ['ranked', 'unranked', 'loved', 'graveyard', 'wip', 'pending', 'approved', 'qualified', 'all']
+
+* **[getBeatmapInfo(beatmapId)](http://docs.ripple.moe/docs/cheesegull/cheesegull-api#get-%2Fapi%2Fb%2F%3Aid)** - Retrieves information about a beatmap with the given ID.
+* **[getBeatmapSetInfo(beatmapSetId)](http://docs.ripple.moe/docs/cheesegull/cheesegull-api#get-%2Fapi%2Fs%2F%3Aid)** - Retrieve information about a beatmapset, as well as its children, knowing its ID.
+* **[searchBeatmaps(searchQuery, gameMode, rankedStatus, amount, offset)](http://docs.ripple.moe/docs/cheesegull/cheesegull-api#get-%2Fapi%2Fsearch)
+** - Returns beatmaps based on the searched query and details passed.
 
 # Checklist
 For the most part, everything useful is done. Here's a list of things that aren't done. 
