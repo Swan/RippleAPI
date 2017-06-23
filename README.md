@@ -58,12 +58,12 @@ There's a ton of different endpoints on the Ripple API that is currently support
 * **[getUserpageById(id)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Fuserpage)** - Retrieve the userpage of an user, in BBCode. 
 * **[lookupUser(partOfUsername)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers%2Flookup)** - Search for an user knowing (part of) their username. This is mainly used for Ripple’s user search function, in the navbar.
 
-*The following can be used to retrieve one or more users*
+The following can be used to retrieve one or more users
 
-* **getUserByNameAka(nameAka, page)** - Retrieves a list of users by their name_aka. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
-* **getUsersByCountry(country, page)** - Retrieves a list of users by their country. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
-* **getUsersByPrivilegeGroup(privilegeGroup, page)** - Retrieves a list of users by their Privilege Group. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
-* **getUsersById([userIds])** - Retrieves a list of users by their ids. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
+* **[getUserByNameAka(nameAka, page)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)** - Retrieves a list of users by their name_aka.
+* **[getUsersByCountry(country, page)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)** - Retrieves a list of users by their country.
+* **[getUsersByPrivilegeGroup(privilegeGroup, page)](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)** - Retrieves a list of users by their Privilege Group.
+* **[getUsersById([userIds])](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)** - Retrieves a list of users by their ids. 
 * **getUsersByName([usernames])** - Retrieves a list of users by their usernames. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
 * **getUsersByNameAka([nameAkas])** - Retrieves a list of users by querying for multiple name_akas. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
 * **getUsersByCountries([countries])** - Retrieves a list of users by querying for multiple countries. [GET /users](http://docs.ripple.moe/docs/api/v1#get-%2Fusers)
