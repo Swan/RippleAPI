@@ -171,4 +171,32 @@ describe('users', () => {
         });
     });
 
+    // Test for users.getUserpageById(id)
+    describe('#getUserpageById', () => { 
+        it('should get the userpage for a given user from Ripple\'s API', (done) => {
+            users.getUserpageById(1006)
+                .then((user) => {
+                    //console.log(user);
+                    done();
+                    expect(user)
+                        .toExist()
+                        .toBeA('object')                        
+                })
+        });
+    });
+
+    // // Test for users.getUserpageByName(username)
+    // describe('#getUserpageByName', () => { 
+    //     it('should get the userpage for a given user from Ripple\'s API', (done) => {
+    //         users.getUserpageByName('Shaural')
+    //             .then((user) => {
+    //                 console.log(user);
+    //                 done();
+    //                 expect(user)
+    //                     .toExist()
+    //                     .toBeA('object')                        
+    //             })
+    //     });        
+    // });
+
 });

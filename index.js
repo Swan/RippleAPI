@@ -20,5 +20,7 @@ module.exports = {
     getUsersByName: users.getUsersByName,
     getUsersByNameAka: users.getUsersByNameAka,
     getUsersByCountry: users.getUsersByCountries,
-    getIdOfUser: users.getIdOfUser
+    getIdOfUser: users.getIdOfUser,
+    getUserpageById: users.getUserpageById,
+    //getUserpageByName: users.getUserpageByName
 };
