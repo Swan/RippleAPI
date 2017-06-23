@@ -5,7 +5,7 @@ describe('cheesegull', () => {
 
     // Test for tokens.createToken(username, password, privileges, description).
     describe('#createToken', () => { 
-        it('should get the information for a given beatmap from Ripple\'s API', (done) => {
+        it('should create and retrieve a new token from Ripple\'s API', (done) => {
             let tokenInfo = {
                 username: '',
                 password: '',
