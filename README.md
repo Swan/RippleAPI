@@ -27,6 +27,9 @@ There's a ton of different endpoints on the Ripple API that is currently support
 * **surprise()** - A test API endpoint that spits some random sentences.. [GET /surprise_me](http://docs.ripple.moe/docs/api/v1#get-%2Fsurprise_me)
 
 
+**Badges**
+* **getBadges** - Retrieve a list of all the current badges on Ripple. [GET /badges](http://http://ripple.moe/api/v1/badges)
+
 **Tokens**
 * **createToken(username, password, privileges, description)** - Create a new token using username and password. [POST /tokens](http://docs.ripple.moe/docs/api/v1#post-%2Ftokens)
 * **getTokens(token)** - Allows to retrieve information about the API tokens of the current user. [GET /tokens](http://docs.ripple.moe/docs/api/v1#get-%2Ftokens)
