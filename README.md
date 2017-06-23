@@ -65,5 +65,15 @@ There's a ton of different endpoints on the Ripple API that is currently support
 
 ***Cheesegull (Beatmaps)**
 
-*Note: For gameMode parameters, you can specify a single mode: 'mania' or an array of modes: ['mania', 'osu', 'taiko', 'ctb', 'all']*
-*Note: For rankedStatus parameters, you can specify a single status: 'ranked' OR an array of statuses: ['ranked', 'unranked', 'loved', 'graveyard', 'wip', 'pending', 'approved', 'qualified', 'all']*
+*Note: For gameMode parameters, you can specify either:*
+
+*A single mode: 'mania' OR*
+
+*An array of modes: ['mania', 'osu', 'taiko', 'ctb', 'all']*
+
+
+*Note: For rankedStatus parameters, you can specify either:* 
+
+*A single status: 'ranked' OR* 
+
+*An array of statuses: ['ranked', 'unranked', 'loved', 'graveyard', 'wip', 'pending', 'approved', 'qualified', 'all']*
