@@ -116,8 +116,7 @@ An array of statuses: ['ranked', 'unranked', 'loved', 'graveyard', 'wip', 'pendi
 
 * **[getBeatmapInfo(beatmapId)](http://docs.ripple.moe/docs/cheesegull/cheesegull-api#get-%2Fapi%2Fb%2F%3Aid)** - Retrieves information about a beatmap with the given ID.
 * **[getBeatmapSetInfo(beatmapSetId)](http://docs.ripple.moe/docs/cheesegull/cheesegull-api#get-%2Fapi%2Fs%2F%3Aid)** - Retrieve information about a beatmapset, as well as its children, knowing its ID.
-* **[searchBeatmaps(searchQuery, gameMode, rankedStatus, amount, offset)](http://docs.ripple.moe/docs/cheesegull/cheesegull-api#get-%2Fapi%2Fsearch)
-** - Returns beatmaps based on the searched query and details passed.
+* **[searchBeatmaps(searchQuery, gameMode, rankedStatus, amount, offset)](http://docs.ripple.moe/docs/cheesegull/cheesegull-api#get-%2Fapi%2Fsearch)** - Returns beatmaps based on the searched query and details passed.
 
 # Checklist
 For the most part, everything useful is done. Here's a list of things that aren't done. 
