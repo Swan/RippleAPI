@@ -19,4 +19,6 @@ rippleAPI.ping()
       throw new Error(err);
     });
 ```    
-d
+# List of Functions
+* ping(token) - Check the API is alive, and check your token’s privileges. [GET /ping](http://docs.ripple.moe/docs/api/v1#get-%2Fping)
+* surprise() - A test API endpoint that spits some random sentences.. [GET /surprise_me](http://docs.ripple.moe/docs/api/v1#get-%2Fsurprise_me)
