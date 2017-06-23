@@ -96,6 +96,13 @@ There's a ton of different endpoints on the Ripple API that is currently support
 * **getBeatmapSetInfo(beatmapSetId)** - Retrieve information about a beatmapset, as well as its children, knowing its ID. [GET /api/s/:id](http://docs.ripple.moe/docs/cheesegull/cheesegull-api#get-%2Fapi%2Fs%2F%3Aid)
 * **searchBeatmaps(searchQuery, gameMode, rankedStatus, amount, offset)** - Returns beatmaps based on the searched query and details passed. [GET /api/search](http://docs.ripple.moe/docs/cheesegull/cheesegull-api#get-%2Fapi%2Fsearch)
 
+# Checklist
+For the most part, everything useful is done. Here's a list of things that aren't done. 
+* WebSocket API [✗]
+* Documentation [✗]
+* Blog [✗]
+* Requests that require a security key [✗]
+
 # LICENSE
 MIT License
 
